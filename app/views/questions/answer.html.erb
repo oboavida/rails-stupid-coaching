@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Questions#answer</h1>
+  <p>Find me in app/views/questions/answer.html.erb</p>
+  <<h3><%= link_to '⬅️ Go back', ask_path %></h3>
+
+
+  <% if @answer == 'I am going to work' %>
+    <h2>'Great!'</h2>
+  <% elsif @answer.include?('?') %>
+    <h2>'Silly question, get dressed and go to work!'</h2>
+  <% else %>
+    <h2>"I don't care, get dressed and go to work!"</h2>
+  <% end %>
+</div>
